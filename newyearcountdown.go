@@ -7,8 +7,7 @@ import (
 
 func refresh(newYearUnix int64) {
 	currentUnix := time.Now().Unix()
-	fmt.Printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n") // if you have less dumb way to do this, please replace
-	go fmt.Println(newYearUnix-currentUnix, "s")
+	go fmt.Printf("\r%v s", newYearUnix-currentUnix)
 }
 
 func main() {
