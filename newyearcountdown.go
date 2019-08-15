@@ -1,9 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
+import "time"
 
 func main() {
 	newYearUnix := time.Date(time.Now().Year()+1, 1, 1, 0, 0, 0, 0, time.Local).Unix()
